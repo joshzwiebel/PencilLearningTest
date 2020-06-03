@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Next Word Generation</title>
+</head>
+<style>
+    body {
+        background: #c94c4c;
+    }
+
+    #main_container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-top: 20%;
+        margin-bottom: auto;
+        padding: 5px;
+        background-color: snow;
+        text-align: center;
+    }
+    #subcontainer {
+        display: inline-block;
+        text-align: center;
+    }
+</style>
+<body>
+<meta charset=utf-8>
+
+<form method="POST">
+    <div id="main_container">
+        <div id="subcontainer">
+            <input name="text">
+            <input type="submit">
+        </div>
+        {{generated_text}}
+    </div>
+
+</form>
+</body>
+</html>
+
+
+
