@@ -24,7 +24,7 @@ with application.app_context():
 
 
 def run():
-    application.run(debug=True, port=33507, use_reloader=False)
+    application.run(debug=True, use_reloader=False)
 
 
 if __name__ == '__main__':
