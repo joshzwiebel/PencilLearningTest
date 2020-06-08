@@ -11,7 +11,7 @@ def initialize():
 def generate_next_word(prompt_text):
     encoded_prompt = tokenizer.encode(prompt_text,
                                       add_special_tokens=False,
-                                      return_tensors="pt")
+                                      return_tensors="tf")
     num_sequences = 1
     length = 5
     generated_sequences = model.generate(

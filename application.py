@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 
 from text_generation import generate_next_word
+from text_generation import initialize
 
 application = Flask(__name__)
 
@@ -17,9 +18,8 @@ def my_form_post():
     return render_template('template.html', generated_text=texty)
 
 
-with application.app_context():
-    from text_generation import initialize
-
+@application.before_first_request
+def initiate():
     initialize()
 
 
