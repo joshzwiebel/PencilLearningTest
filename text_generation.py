@@ -1,11 +1,10 @@
 from transformers import OpenAIGPTTokenizer
-from transformers import OpenAIGPTLMHeadModel
-
+from transformers.modeling_tf_openai import TFOpenAIGPTLMHeadModel
 
 # Initializing a GPT2 configuration
 def initialize():
     global model, tokenizer
-    model = OpenAIGPTLMHeadModel.from_pretrained("openai-gpt")
+    model = TFOpenAIGPTLMHeadModel.from_pretrained("openai-gpt")
     tokenizer = OpenAIGPTTokenizer.from_pretrained("openai-gpt")
 
 
