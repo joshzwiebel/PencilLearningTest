@@ -23,9 +23,9 @@ def initiate():
     initialize()
 
 
-def run():
-    application.run(debug=True, use_reloader=False)
+
+
 
 
 if __name__ == '__main__':
-    run()
+    application.run(debug=True, use_reloader=False, host='0.0.0.0')
