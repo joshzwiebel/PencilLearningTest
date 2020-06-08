@@ -4,7 +4,7 @@ from text_generation import generate_next_word
 from text_generation import initialize
 
 application = Flask(__name__)
-
+application.secret_key = "Jl6EcFIbOe23EgdJ32MQ5WxmDz3bQ3L7KSDtVPij"
 
 @application.route('/')
 def index():
