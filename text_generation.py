@@ -1,4 +1,3 @@
-from transformers import GPT2Config
 from transformers import OpenAIGPTTokenizer
 from transformers import OpenAIGPTLMHeadModel
 
